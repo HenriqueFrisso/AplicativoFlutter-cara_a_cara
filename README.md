@@ -1,16 +1,88 @@
-# cara_a_cara
+# 🎮 Guess Who (Flutter)
 
-A new Flutter project.
+**Guess Who** is a **mobile game** developed with **Flutter**, focused on **local multiplayer experiences**.  
+The game allows **nearby players** to connect directly to each other using **Nearby Connections**, with all player data stored locally via **Isar Database**.
 
-## Getting Started
+---
+ 
+### 📱 About the Project
 
-This project is a starting point for a Flutter application.
+**Guess Who** was designed to explore **offline-first mobile architectures**, **peer-to-peer communication**, and **local data persistence**, eliminating the need for internet connectivity or external servers.
 
-A few resources to get you started if this is your first Flutter project:
+The project emphasizes:
+- Local multiplayer gameplay
+- Real-time peer-to-peer communication
+- Efficient local data storage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🚀 Features
+
+- 👥 **Head-to-Head Multiplayer**  
+  Play against another person using nearby device connections.
+
+- 📡 **Nearby Device Discovery & Communication**  
+  Uses `nearby_connections` to discover devices, establish connections, and exchange game data in real time.
+
+- 🗄️ **Local Persistence with Isar**  
+  Player profiles and match data are stored locally using the **Isar Database**.
+
+- ⚡ **Offline-First Experience**  
+  Fully functional without internet access.
+
+---
+
+### 🛠️ Technologies & Tools
+
+#### Mobile
+- **Flutter**
+- **Dart**
+
+#### Data & Connectivity
+- **Isar Database**
+- **Nearby Connections**
+
+#### Architecture
+- Offline-first design  
+- Peer-to-peer communication  
+- Modular and scalable structure  
+
+---
+
+### 🖼️ Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/deck_editor.png" width="250" height="500"/>
+  <img src="assets/screenshots/match_page.png" width="250" height="500"/>
+</p>
+
+---
+
+### 📂 Project Structure (Simplified)
+
+```text
+lib/
+ ├── models/        # Isar entities (Cards, Decks)
+ ├── pages/         # Application screens and navigation
+ ├── services/      # Database (Isar) and Nearby Connections logic
+ └── widgets/       # Reusable UI components
+```
+
+ ### 🔮 Future Work / Next Steps
+
+The following improvements and features are planned for **Guess Who**:
+
+- 🎨 **Improved UI/UX**  
+  Refine the game interface, animations, and feedback to make gameplay more engaging.
+
+- 🧩 **Game Modes & Variants**  
+  Add new gameplay modes, challenges, etc.
+
+- 📊 **Statistics & Leaderboards**  
+  Track player performance, win/loss ratios, and match history locally.
+
+- 🔒 **Data Security & Synchronization**  
+  Implement optional encrypted storage and offline-to-online sync for future cloud integration.
+
+- ⚡ **Performance Optimizations**  
+  Reduce latency in real-time communication and improve responsiveness on low-end devices.
