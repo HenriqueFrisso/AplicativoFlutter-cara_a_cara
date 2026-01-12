@@ -4,12 +4,20 @@
 The game allows **nearby players** to connect directly to each other using **Nearby Connections**, with all player data stored locally via **Isar Database**.
 
 ---
- 
+
 ### 📱 About the Project
 
-**Guess Who** was designed to explore **offline-first mobile architectures**, **peer-to-peer communication**, and **local data persistence**, eliminating the need for internet connectivity or external servers.
+**Guess Who** is a **head-to-head multiplayer game** where players can **create, manage, and play with custom decks of cards**.  
+
+The gameplay works as follows:
+1. **Create Cards** – Players first register individual cards in the system.
+2. **Build Decks** – Cards are assigned to decks. You can create multiple decks using the same or different cards.
+3. **Deck Reuse** – Cards only need to be registered once and can be reused in multiple decks.
+4. **Start a Game** – The host selects a prepared deck and waits for a client to connect.
+5. **Automatic Deck Sharing** – The chosen deck is sent to the client device, which **does not need to have the cards or deck registered locally**.
 
 The project emphasizes:
+- Flexible deck and card management
 - Local multiplayer gameplay
 - Real-time peer-to-peer communication
 - Efficient local data storage
